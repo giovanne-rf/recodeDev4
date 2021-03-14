@@ -51,6 +51,11 @@ public class Course {
 	 * 
 	 * DETACH
 	 */
+	
+	/*
+	   @ToString.Exclude para evitar o looping
+	 */
+
 
 	@OneToMany(cascade = CascadeType.REMOVE, mappedBy = "course")
 	@ToString.Exclude

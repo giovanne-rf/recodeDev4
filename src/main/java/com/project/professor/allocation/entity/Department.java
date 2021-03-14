@@ -49,6 +49,11 @@ public class Department {
 	 * 
 	 * DETACH
 	 */
+	
+	/*
+	   @ToString.Exclude para evitar o looping
+	 */
+
 
 	@OneToMany(cascade = CascadeType.REMOVE, mappedBy = "department")
     @ToString.Exclude
