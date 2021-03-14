@@ -46,8 +46,7 @@ public class Allocation {
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "course_id", nullable = false)
 	private Course course;
-	
-	private String casa;
+
 	
 
 }
