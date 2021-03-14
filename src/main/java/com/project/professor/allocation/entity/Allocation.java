@@ -37,11 +37,11 @@ public class Allocation {
 	private DayOfWeek day;
 
 	@Temporal(TemporalType.TIME)
-	@Column(name = "start", nullable = false)
+	@Column(name = "startClass", nullable = false)
 	private Date startTime;
 
 	@Temporal(TemporalType.TIME)
-	@Column(name = "end", nullable = false)
+	@Column(name = "endClass", nullable = false)
 	private Date endTime;
 
 	@ManyToOne(optional = false)
