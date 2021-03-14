@@ -33,6 +33,22 @@ public class Department {
 
 	@Column(unique = true, nullable = false)
 	private String name;
+	
+	/*
+	 * Cascade all operations ALL,
+	 * 
+	 * Cascade persist operation PERSIST,
+	 * 
+	 * Cascade merge operation MERGE,
+	 * 
+	 * Cascade remove operation REMOVE,
+	 * 
+	 * Cascade refresh operation REFRESH,
+	 * 
+	 * Cascade detach operation
+	 * 
+	 * DETACH
+	 */
 
 	@OneToMany(cascade = CascadeType.REMOVE, mappedBy = "department")
     @ToString.Exclude

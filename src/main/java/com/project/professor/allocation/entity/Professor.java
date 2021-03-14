@@ -41,6 +41,22 @@ public class Professor {
 	@ManyToOne(optional = false)
     @JoinColumn(name = "department_id", nullable = false)
 	private Department department;
+	
+	/*
+	 * Cascade all operations ALL,
+	 * 
+	 * Cascade persist operation PERSIST,
+	 * 
+	 * Cascade merge operation MERGE,
+	 * 
+	 * Cascade remove operation REMOVE,
+	 * 
+	 * Cascade refresh operation REFRESH,
+	 * 
+	 * Cascade detach operation
+	 * 
+	 * DETACH
+	 */
 
 	@OneToMany(cascade = CascadeType.REMOVE, mappedBy = "professor")
     @ToString.Exclude

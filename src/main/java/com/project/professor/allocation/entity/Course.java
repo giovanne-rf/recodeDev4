@@ -2,8 +2,6 @@ package com.project.professor.allocation.entity;
 
 import java.util.List;
 
-
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -37,6 +35,22 @@ public class Course {
 
 	@Column(nullable = false, length = 80)
 	private String name;
+
+	/*
+	 * Cascade all operations ALL,
+	 * 
+	 * Cascade persist operation PERSIST,
+	 * 
+	 * Cascade merge operation MERGE,
+	 * 
+	 * Cascade remove operation REMOVE,
+	 * 
+	 * Cascade refresh operation REFRESH,
+	 * 
+	 * Cascade detach operation
+	 * 
+	 * DETACH
+	 */
 
 	@OneToMany(cascade = CascadeType.REMOVE, mappedBy = "course")
 	@ToString.Exclude
