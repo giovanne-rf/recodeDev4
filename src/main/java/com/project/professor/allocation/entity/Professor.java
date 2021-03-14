@@ -2,6 +2,11 @@ package com.project.professor.allocation.entity;
 
 import java.util.List;
 
+//@Getter
+//@Setter
+//@AllArgsConstructor
+//@NoArgsConstructor
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;

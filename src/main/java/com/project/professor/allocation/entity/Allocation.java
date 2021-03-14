@@ -1,6 +1,11 @@
 package com.project.professor.allocation.entity;
 
 import java.time.DayOfWeek;
+
+//@Getter
+//@Setter
+//@AllArgsConstructor
+//@NoArgsConstructor
 import java.util.Date;
 
 import javax.persistence.Column;

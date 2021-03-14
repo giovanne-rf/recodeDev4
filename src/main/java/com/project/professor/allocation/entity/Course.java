@@ -2,6 +2,8 @@ package com.project.professor.allocation.entity;
 
 import java.util.List;
 
+
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +16,15 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+
+//@Getter
+//@Setter
+//@AllArgsConstructor
+//@NoArgsConstructor
+
+/*
+ Todas essas anotações sao substituidas pela anotacao @Data (getters, setters e construtores)
+ */
 
 @Entity
 @Data
