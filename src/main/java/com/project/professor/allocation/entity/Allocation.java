@@ -48,5 +48,6 @@ public class Allocation {
 	private Course course;
 	
 	private String casa;
+	
 
 }
