@@ -56,7 +56,6 @@ public class Course {
 	   @ToString.Exclude para evitar o looping
 	 */
 
-
 	@OneToMany(cascade = CascadeType.REMOVE, mappedBy = "course")
 	@ToString.Exclude
 	@EqualsAndHashCode.Exclude
