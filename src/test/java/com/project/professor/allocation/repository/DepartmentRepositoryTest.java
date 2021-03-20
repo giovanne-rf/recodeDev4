@@ -45,21 +45,4 @@ class DepartmentRepositoryTest {
 		System.out.println(departament);
 	}
 	
-	@Test
-	public void saveCreate() {
-		
-		//Range
-		Department d = new Department();
-		d.setName("Departamento de Física Cinética");
-	
-	
-		
-		//Act
-		Department department =  departmentRepository.save(d);
-		
-		
-		
-		//Print
-		System.out.println(department);
-	}
 }
